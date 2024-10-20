@@ -11,24 +11,29 @@ body{
 
 
 .welcomeScreen{
-  background: url(../assets/images/welcome.jpg) transparent no-repeat center center;
+  background: url(../assets/images/Background.webp) transparent no-repeat center center;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height : 100vh;
+  padding-top : 32vh;
+  padding-bottom : 58vh;
+  display : flex;
+  justify-content : center;
 }
 
 .startBtn{
+  width : 30vh;
+  padding-top : 2vh;
+  padding-bottom : 2vh;
+  text-align : center;
   border: 4px solid rgb(106, 227, 223);
   background-color: rgb(76, 212, 119);
-  padding: 20px 40px;
   border-radius: 40px;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
   text-decoration: none;
 }
+
 .menuScreen{
   background: url(../assets/images/menu.jpg) transparent no-repeat center center;
   background-size: cover;
