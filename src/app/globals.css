@@ -84,8 +84,12 @@ body{
 .playScreen{
   background-color: rgb(102, 247, 45);
   height: 100vh;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+
+.answer{
+  display: flex;
 }

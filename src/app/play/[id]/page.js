@@ -5,12 +5,14 @@ export default function Home({ params }) {
   return (
     <main className="playScreen">
       <Image src={require(`../../../assets/images/objects/${lv?.image}`)} alt={lv.item} width={80} height={120} />
+      <div className="answer">
       <br />
       {
         lv.trashbin.map((trash)=>{
             return <div key={trash}>{trash}</div>
         })
       }
+      </div>
     </main>
   );
 }
