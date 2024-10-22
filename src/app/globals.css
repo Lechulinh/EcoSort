@@ -85,11 +85,37 @@ body{
   background-color: rgb(102, 247, 45);
   height: 100vh;
   /* display: flex; */
+.playScreen {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
 }
 
-.answer{
-  display: flex;
+/* Back button "Quay lại" */
+.homeBtn2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
+
+.trash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
