@@ -91,6 +91,30 @@ body{
   align-items: center;
 }
 
+.trash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.trash.correct {
+  background-color: #4CAF50; /* Green for correct */
+  color: white;
+}
+
+.trash.incorrect {
+  background-color: #f44336; /* Red for incorrect */
+  color: white;
+}
+
+
 /* Back button "Quay lại" */
 .homeBtn2 {
   position: absolute;
