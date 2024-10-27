@@ -7,9 +7,8 @@ export default function Home({ params }) {
     <main className="playScreen">
       <a className="homeBtn2" href="/menu">Quay lại</a>
       <Image src={require(`../../../assets/images/objects/${lv?.image}`)} alt={lv.item} width={80} height={120} />
-      <div className="answer">
       <br />
-      {
+      <div className="trashBtn">{
         lv.trashbin.map((trash)=>{
             return <div key={trash} className="trash">{trash}</div>
         })

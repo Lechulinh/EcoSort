@@ -81,10 +81,7 @@ body{
   font-weight: bold;
 }
 
-.playScreen{
-  background-color: rgb(102, 247, 45);
-  height: 100vh;
-  /* display: flex; */
+
 .playScreen {
   position: relative;
   height: 100vh; /* Full screen height */
@@ -117,5 +114,9 @@ body{
   background-color: #f0f0f0;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+.trashBtn {
+  display: flex;
 }
 
