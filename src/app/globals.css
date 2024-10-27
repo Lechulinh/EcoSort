@@ -148,3 +148,53 @@ body{
   display: flex;
 }
 
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.5); /* Nền tối mờ */
+}
+
+.ReactModal__Content {
+  position: relative; /* Đặt vị trí cho modal */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Giữa modal */
+  background: white; /* Nền trắng cho modal */
+  padding: 20px; /* Padding cho nội dung */
+  border-radius: 8px; /* Bo góc */
+  width: 600px; /* Chiều rộng modal - tăng kích thước */
+  height: auto; /* Chiều cao tự động */
+  color: black; /* Màu chữ */
+  text-align: center; /* Căn giữa văn bản */
+  max-height: 80vh; /* Giới hạn chiều cao tối đa của modal */
+  overflow-y: auto; /* Cuộn nội dung nếu cần */
+}
+
+.modalBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0; /* Màu nền mặc định */
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px; /* Kích thước chữ */
+}
+
+.modalBtn:hover {
+  background-color: #d1d1d1; /* Màu nền khi hover */
+}
+
+.modalBtn.correct {
+  background-color: #4CAF50; /* Màu cho nút đáp án đúng */
+  color: white;
+}
+
+.modalBtn.incorrect {
+  background-color: #f44336; /* Màu cho nút đáp án sai */
+  color: white;
+}
+
+
+
