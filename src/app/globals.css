@@ -137,18 +137,26 @@ body{
 }
 
 .trash {
+  width: 240px; /* Tăng chiều rộng của button */
+  height: 120px; /* Tăng chiều cao của button */
+  /* padding: 15px; Khoảng cách trong button */
+  font-size: 24px; /* Tăng kích thước chữ */
+  background-color: #f0f0f0; /* Màu nền */
+  border: 2px solid #ddd; /* Đường viền */
+  border-radius: 10px; /* Bo tròn góc */
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin: 5px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  transition: transform 0.3s; /* Tạo hiệu ứng nhấn */
+  /* margin: 10px; Khoảng cách giữa các button */
 }
 
 .trashBtn {
   display: flex;
+  margin: 40px;
+  gap: 300px;
+  justify-content: center;
 }
 
 .ReactModal__Overlay {
@@ -160,7 +168,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Giữa modal */
-  background: white; /* Nền trắng cho modal */
+  background: rgb(251, 251, 251); /* Nền trắng cho modal */
   padding: 20px; /* Padding cho nội dung */
   border-radius: 8px; /* Bo góc */
   width: 600px; /* Chiều rộng modal - tăng kích thước */
@@ -197,6 +205,10 @@ body{
 .modalBtn.incorrect {
   background-color: #f44336; /* Màu cho nút đáp án sai */
   color: white;
+}
+
+.imgPlay {
+  margin: 110px;
 }
 
 
