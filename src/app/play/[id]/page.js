@@ -83,8 +83,8 @@ export default function Home({ params }) {
                     }
                 }}                
                 onMenu={() => {
-                    // Logic quay lại menu chính
-                }} 
+                    window.location.href = "/menu";
+                }}                
             />
         </main>
     );
