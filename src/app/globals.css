@@ -84,6 +84,9 @@ body{
 
 .playScreen {
   position: relative;
+  /* background-image: url(../assets/images/Backgroundlevel.webp); */
+  background : url(../assets/images/Backgroundlevel.webp) transparent no-repeat center center;
+  background-size : cover; 
   height: 100vh; /* Full screen height */
   display: flex;
   flex-direction: column;
