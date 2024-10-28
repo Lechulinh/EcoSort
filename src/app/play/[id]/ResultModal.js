@@ -30,7 +30,7 @@ const ResultModal = ({ isOpen, onRequestClose, isCorrect, onRetry, onNextLevel, 
                 isCorrect ? (
                     <>
                         <h2>Hoan hô, đáp án đúng rồi!</h2>
-                        <div className="modalBtn" onClick={onRetry}>Chơi lại</div>
+                        <div className="modalBtn" onClick={onRetry}> Chơi lại</div>
                         <div className="modalBtn" onClick={onNextLevel}>Màn kế tiếp</div>
                         <div className="modalBtn" onClick={onMenu}>Quay lại menu chính</div>
                     </>
