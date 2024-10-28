@@ -18,7 +18,7 @@ export default function Home({ params }) {
     const handleTrashClick = (trash) => {
         const isCorrectAnswer = trash === lv.answer;
         setSelectedTrash((prevState) => ({
-            ...prevState,
+            // ...prevState,
             [trash]: isCorrectAnswer ? "correct" : "incorrect",
         }));
 
@@ -75,8 +75,13 @@ export default function Home({ params }) {
                     setIsModalOpen(false);
                 }} 
                 onNextLevel={() => {
-                    // Logic chuyển đến màn kế tiếp
-                }} 
+                    const nextLevel = Number(params.id) + 1;
+                    if (nextLevel <= 75) {
+                        window.location.href = `/play/${nextLevel}`;
+                    } else {
+                        alert("Bạn đã hoàn thành tất cả các cấp độ!");
+                    }
+                }}                
                 onMenu={() => {
                     // Logic quay lại menu chính
                 }} 
