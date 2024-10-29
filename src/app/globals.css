@@ -94,19 +94,6 @@ body{
   align-items: center;
 }
 
-.trash {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 5px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
 .trash.correct {
   background-color: #4CAF50; /* Green for correct */
   color: white;
@@ -137,9 +124,9 @@ body{
 }
 
 .trash {
-  width: 240px; /* Tăng chiều rộng của button */
+  width: 120px; /* Tăng chiều rộng của button */
   height: 120px; /* Tăng chiều cao của button */
-  /* padding: 15px; Khoảng cách trong button */
+  margin : auto;
   font-size: 24px; /* Tăng kích thước chữ */
   background-color: #f0f0f0; /* Màu nền */
   border: 2px solid #ddd; /* Đường viền */
@@ -149,13 +136,12 @@ body{
   justify-content: center;
   align-items: center;
   transition: transform 0.3s; /* Tạo hiệu ứng nhấn */
-  /* margin: 10px; Khoảng cách giữa các button */
 }
 
 .trashBtn {
   display: flex;
   margin: 40px;
-  gap: 300px;
+  gap: 200px;
   justify-content: center;
 }
 
