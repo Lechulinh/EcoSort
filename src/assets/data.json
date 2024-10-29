@@ -1,6 +1,6 @@
 [
-    { "level": 1, "item": "Vỏ chuối", "image": "qua-dua.png", "answer": "Hữu cơ", "trashbin": ["Hữu cơ", "Tái chế"] },
-    { "level": 2, "item": "Lego hỏng", "image" : "qua-dua.png", "answer": "Tái chế", "trashbin": ["Hữu cơ", "Tái chế"] },
+    { "level": 1, "item": "Vỏ chuối", "image": "qua-dua.webp", "answer": "Hữu cơ", "trashbin": ["Hữu cơ", "Tái chế"] },
+    { "level": 2, "item": "Lego hỏng", "image" : "qua-dua.webp", "answer": "Tái chế", "trashbin": ["Hữu cơ", "Tái chế"] },
     { "level": 3, "item": "Quả dừa", "answer": "Hữu cơ", "trashbin": ["Hữu cơ", "Tái chế"] },
     { "level": 4, "item": "Cà rốt", "answer": "Hữu cơ", "trashbin": ["Hữu cơ", "Tái chế"] },
     { "level": 5, "item": "Chai nhựa", "answer": "Tái chế", "trashbin": ["Hữu cơ", "Tái chế"] },

@@ -50,8 +50,8 @@ export default function Home({ params }) {
                 <Image
                 src={require(`../../../assets/images/objects/${lv.image || "default.png"}`)}
                 alt={lv.item}
-                width={80}
-                height={120}
+                width={180}
+                height={180}
             />
             <br />
             </div>
