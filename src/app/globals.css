@@ -137,7 +137,7 @@ body{
 .trashBtn {
   display: flex;
   margin: 40px;
-  gap: 200px;
+  gap: 100px;
   justify-content: center;
 }
 

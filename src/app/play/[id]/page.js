@@ -27,7 +27,6 @@ export default function Home({ params }) {
     const completeLevel = () => {
         // Access localStorage and levelStatus
         const storedStatus = JSON.parse(localStorage.getItem("levelStatus")) || Array(75);
-        console.log(storedStatus);
         const currentLevelIndex = Number(params.id) - 1; // Adjust for 0-based index
         if (currentLevelIndex < storedStatus.length - 1) {
             storedStatus[currentLevelIndex + 1] = true; // Unlock the next level
