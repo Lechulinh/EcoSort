@@ -45,7 +45,7 @@ export default function Home({ params }) {
     return (
         <main className="playScreen">
             <div>
-                <a className="homeBtn2" href="/menu">Quay lại</a>
+                <a className="homeBtn" href="/menu">Quay lại</a>
             </div>
             <div className="imgPlay">
                 <Image

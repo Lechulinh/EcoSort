@@ -31,18 +31,31 @@ export default function Home() {
           //     <a href={`/play/${level.level}`}>LV {level.level}</a>
           //   </li>
           // );
+          // return (
+          //   <li key={level.level}>
+          //     {isUnlocked ? (
+          //       // Render unlocked level as a clickable link
+          //       <a href={`/play/${level.level}`} className="level-link">
+          //         LV {level.level}
+          //       </a>
+          //     ) : (
+          //       // Render locked level as a non-clickable item
+          //       <span className="level-locked">LV {level.level}</span>
+          //     )}
+          //   </li>
+          // );
           return (
-            <li key={level.level}>
-              {isUnlocked ? (
-                // Render unlocked level as a clickable link
-                <a href={`/play/${level.level}`} className="level-link">
-                  LV {level.level}
-                </a>
-              ) : (
-                // Render locked level as a non-clickable item
-                <span className="level-locked">LV {level.level}</span>
-              )}
-            </li>
+            <div>
+            {isUnlocked ? (
+              <div className = "level-link">
+              <a href={`/play/${level.level}`} className = "lv">
+                LV {level.level}
+              </a>
+              </div>
+            ) : (
+              <div className="level-locked">LV {level.level}</div>
+            )}
+            </div>
           );
         })}
       </ul>
