@@ -26,24 +26,7 @@ export default function Home() {
       <ul>
         {data.map((level) => {
           const isUnlocked = levelStatus[level.level-1];
-          // return (
-          //   <li key={level.level}>
-          //     <a href={`/play/${level.level}`}>LV {level.level}</a>
-          //   </li>
-          // );
-          // return (
-          //   <li key={level.level}>
-          //     {isUnlocked ? (
-          //       // Render unlocked level as a clickable link
-          //       <a href={`/play/${level.level}`} className="level-link">
-          //         LV {level.level}
-          //       </a>
-          //     ) : (
-          //       // Render locked level as a non-clickable item
-          //       <span className="level-locked">LV {level.level}</span>
-          //     )}
-          //   </li>
-          // );
+          // const isUnlocked = true;
           return (
             <div>
             {isUnlocked ? (
