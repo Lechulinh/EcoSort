@@ -6,8 +6,7 @@ export default function Home() {
 
   const levels = 75;
   const initialStatus = Array(levels).fill(false);
-  initialStatus[0] = true; // Unlock Level 1 by default
-
+  initialStatus[0] = true;
   const [levelStatus, setLevelStatus] = useState(initialStatus);
 
   useEffect(() => {
@@ -15,6 +14,8 @@ export default function Home() {
       const storedStatus = JSON.parse(localStorage.getItem("levelStatus"));
       if (storedStatus) {
         setLevelStatus(storedStatus);
+      } else {
+        localStorage.setItem("levelStatus", JSON.stringify(levelStatus));
       }
     }
   }, []);
@@ -28,7 +29,7 @@ export default function Home() {
           const isUnlocked = levelStatus[level.level-1];
           // const isUnlocked = true;
           return (
-            <div>
+            <li key = {level.level}>
             {isUnlocked ? (
               <div className = "level-link">
               <a href={`/play/${level.level}`} className = "lv">
@@ -38,7 +39,7 @@ export default function Home() {
             ) : (
               <div className="level-locked">LV {level.level}</div>
             )}
-            </div>
+            </li>
           );
         })}
       </ul>
