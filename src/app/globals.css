@@ -40,6 +40,7 @@ body {
   background: url(../assets/images/menu.jpg) transparent no-repeat center center;
   background-size: cover;
   padding: 30px;
+  display: flex;
 }
 
 .homeBtn {
@@ -205,22 +206,24 @@ body {
   }
 
   /* Welcome Screen Adjustments */
-  .welcomeScreen {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-    flex-direction: column;
-  }
-
+  
   .startBtn {
     width: 70%;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 
   /* Menu Screen */
   .menuScreen {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     text-align: center;
+    gap: 40px;
   }
 
   .homeBtn {
@@ -229,6 +232,7 @@ body {
     top: 10px;
     left: 10px;
   }
+
 
   /* Menu Level Adjustments */
   .menuLevel {

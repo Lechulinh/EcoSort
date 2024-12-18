@@ -22,7 +22,9 @@ export default function Home() {
 
   return (
     <main className="menuScreen">
+      <div className= "home">
       <a className="homeBtn" href="/"> Quay lại</a>
+      </div>
       <div className="menuLevel">
       <ul>
         {data.map((level) => {
