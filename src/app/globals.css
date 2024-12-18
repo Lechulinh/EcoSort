@@ -1,30 +1,32 @@
-*{
+* {
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
-html{
+
+html {
   font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
 }
 
-
-.welcomeScreen{
+.welcomeScreen {
   background: url(../assets/images/Background.webp) transparent no-repeat center center;
   background-size: cover;
-  height : 100vh;
-  padding-top : 32vh;
-  padding-bottom : 58vh;
-  display : flex;
-  justify-content : center;
+  height: 100vh;
+  padding-top: 32vh;
+  padding-bottom: 58vh;
+  display: flex;
+  justify-content: center;
 }
 
-.startBtn{
-  width : 30vh;
-  padding-top : 2vh;
-  padding-bottom : 2vh;
-  text-align : center;
+.startBtn {
+  width: 30vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
   border: 4px solid rgb(106, 227, 223);
   background-color: rgb(76, 212, 119);
   border-radius: 40px;
@@ -34,13 +36,13 @@ body{
   text-decoration: none;
 }
 
-.menuScreen{
+.menuScreen {
   background: url(../assets/images/menu.jpg) transparent no-repeat center center;
   background-size: cover;
-  /* height: 100%; */
   padding: 30px;
 }
-.homeBtn{
+
+.homeBtn {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -53,13 +55,15 @@ body{
   background-color: rgb(76, 212, 119);
   padding: 15px 20px;
 }
-.menuLevel{
+
+.menuLevel {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
 }
-.menuScreen ul{
+
+.menuScreen ul {
   padding: 0;
   margin: 0;
   display: flex;
@@ -67,39 +71,40 @@ body{
   gap: 30px;
   list-style: none;
 }
+
 .level-locked {
   display: flex;
   width: 100px;
-  height : 100px;
-  align-items : center;
-  justify-content : center;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
   background-color: lightgray;
   color: darkgray; 
   cursor: not-allowed;
 }
+
 .level-link {
-  display : flex;
+  display: flex;
   width: 100px;
-  height : 100px;
-  align-items : center;
-  justify-content : center;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
   background-color: yellow; 
   color: black; 
 }
-.lv{
+
+.lv {
   text-decoration: none;
   color: green;
   font-size: 22px;
   font-weight: bold;
 }
 
-
 .playScreen {
   position: relative;
-  /* background-image: url(../assets/images/Backgroundlevel.webp); */
-  background : url(../assets/images/Backgroundlevel.webp) transparent no-repeat center center;
-  background-size : cover; 
-  height: 100vh; /* Full screen height */
+  background: url(../assets/images/Backgroundlevel.webp) transparent no-repeat center center;
+  background-size: cover; 
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,31 +112,28 @@ body{
 }
 
 .trash.correct {
-  background-color: #4CAF50; /* Green for correct */
+  background-color: #4CAF50; 
   color: white;
 }
 
 .trash.incorrect {
-  background-color: #f44336; /* Red for incorrect */
+  background-color: #f44336; 
   color: white;
 }
 
-
-/* Back button "Quay lại" */
-
 .trash {
-  width: 120px; /* Tăng chiều rộng của button */
-  height: 120px; /* Tăng chiều cao của button */
-  margin : auto;
-  font-size: 24px; /* Tăng kích thước chữ */
-  background-color: #f0f0f0; /* Màu nền */
-  border: 2px solid #ddd; /* Đường viền */
-  border-radius: 10px; /* Bo tròn góc */
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  font-size: 24px;
+  background-color: #f0f0f0; 
+  border: 2px solid #ddd; 
+  border-radius: 10px; 
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s; /* Tạo hiệu ứng nhấn */
+  transition: transform 0.3s;
 }
 
 .trashBtn {
@@ -142,23 +144,23 @@ body{
 }
 
 .ReactModal__Overlay {
-  background: rgba(0, 0, 0, 0.5); /* Nền tối mờ */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .ReactModal__Content {
-  position: relative; /* Đặt vị trí cho modal */
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Giữa modal */
-  background: rgb(251, 251, 251); /* Nền trắng cho modal */
-  padding: 20px; /* Padding cho nội dung */
-  border-radius: 8px; /* Bo góc */
-  width: 600px; /* Chiều rộng modal - tăng kích thước */
-  height: auto; /* Chiều cao tự động */
-  color: black; /* Màu chữ */
-  text-align: center; /* Căn giữa văn bản */
-  max-height: 80vh; /* Giới hạn chiều cao tối đa của modal */
-  overflow-y: auto; /* Cuộn nội dung nếu cần */
+  transform: translate(-50%, -50%);
+  background: rgb(251, 251, 251);
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  height: auto;
+  color: black;
+  text-align: center;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .modalBtn {
@@ -167,25 +169,25 @@ body{
   align-items: center;
   padding: 10px;
   margin: 5px;
-  background-color: #f0f0f0; /* Màu nền mặc định */
+  background-color: #f0f0f0;
   border: 1px solid #ddd;
-  border-radius: 5px; /* Bo góc */
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: 18px; /* Kích thước chữ */
+  font-size: 18px;
 }
 
 .modalBtn:hover {
-  background-color: #d1d1d1; /* Màu nền khi hover */
+  background-color: #d1d1d1;
 }
 
 .modalBtn.correct {
-  background-color: #4CAF50; /* Màu cho nút đáp án đúng */
+  background-color: #4CAF50;
   color: white;
 }
 
 .modalBtn.incorrect {
-  background-color: #f44336; /* Màu cho nút đáp án sai */
+  background-color: #f44336;
   color: white;
 }
 
@@ -193,5 +195,109 @@ body{
   margin: 110px;
 }
 
+/* Mobile-specific styles (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  /* General adjustments for smaller screens */
+  body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
 
+  /* Welcome Screen Adjustments */
+  .welcomeScreen {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    flex-direction: column;
+  }
 
+  .startBtn {
+    width: 70%;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  /* Menu Screen */
+  .menuScreen {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .homeBtn {
+    font-size: 14px;
+    padding: 8px 15px;
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Menu Level Adjustments */
+  .menuLevel {
+    padding: 10px;
+  }
+
+  .menuScreen ul {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Level Styles */
+  .level-locked,
+  .level-link {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .level-locked {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+  }
+
+  .level-link {
+    background-color: #fce763;
+    border: 2px solid rgb(76, 212, 119);
+  }
+
+  .level-link:hover {
+    transform: scale(1.05);
+  }
+
+  .lv {
+    font-size: 14px;
+  }
+
+  /* Play Screen Adjustments */
+  .playScreen {
+    padding: 5px;
+    height: cover;
+  }
+
+  .trash {
+    width: 70px;
+    height: 70px;
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  .trashBtn {
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+  }
+
+  .imgPlay {
+    margin: 20px;
+  }
+
+  /* Modal Adjustments */
+  .ReactModal__Content {
+    width: 90%;
+    max-height: 70vh;
+  }
+
+  .modalBtn {
+    font-size: 14px;
+    padding: 8px;
+    margin: 5px;
+  }
+}
